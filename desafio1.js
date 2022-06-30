@@ -1,4 +1,13 @@
+let usuario;
 
+usuario = prompt("introduce tu usuario");
+
+if(usuario != null){
+    alert("Bienvenido a cueva de cambio, " + usuario);
+}
+else{
+    alert("No has introducido nada. Recarga la pagina para intentarlo de nuevo, ");
+}
 
 function convertir(){
     let valore = parseInt(document.getElementById("valor").value);
@@ -7,7 +16,7 @@ function convertir(){
     let euro = 129.04;
 
 
-const monedas = ["cotizacion dolar 128.41  " , "cotizacion euro 129.04"];
+const monedas = ["cotizacion dolar " + dolar , "cotizacion euro " + euro];
 
     for (let i = 0; i < monedas.length; i++) {
         alert(monedas[i]);
