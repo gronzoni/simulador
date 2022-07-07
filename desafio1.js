@@ -46,7 +46,20 @@ const monedas = ["cotizacion dolar " + dolar , "cotizacion euro " + euro];
 }
     
 }
+//INVOCO AL FORMULARIO CON LA CONST//
 
+const formulario = document.getElementById('form')
 
+//GENERO EVENTO//
 
+formulario.addEventListener('submit' , function(e){
+e.preventDefault();
+let mail = document.getElementById('email-form').value;
+
+console.log(mail);
+
+//CAMBIO VALOR DE PROPIEDAD DISPLAY DE UN ELEMENTO DEL DOM//
+
+document.getElementById('suscripcion').style.display = "block";
+})
 
